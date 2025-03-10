@@ -22,6 +22,7 @@ public class Collect_Items : MonoBehaviour
         if(other.gameObject.tag == "Collectable") 
         {
             collectedItems++;
+            Debug.Log("test");
             Destroy(other.gameObject);
         }
     }
