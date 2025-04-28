@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Collect_Items : MonoBehaviour
 {
-
     public Sliding_Door door;
     public int collectedItems = 0;
     public int reqiredItems = 3;
-    
+
 
     // Update is called once per frame
     void Update()
@@ -17,7 +16,7 @@ public class Collect_Items : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Collectable") 
         {
